@@ -1,0 +1,17 @@
+{
+  "name": "hardhat-project",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.6",
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.1",
+    "hardhat": "^2.22.6"
+  },
+  "scripts": {
+    "deploy:testnet": "NETWORK=testnet npx hardhat ignition deploy ./ignition/modules/Core.ts --network pwr",
+    "init-contracts:testnet": "NETWORK=testnet npx hardhat run ./scripts/init/initCore.ts --network pwr"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.2"
+  }
+}
